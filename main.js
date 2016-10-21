@@ -25,56 +25,56 @@ document.getElementById("q0").classList.add("status-good");
 // 1. Declare a variable whose value is an empty array.
 //    Use any method you choose to add at least 4 items to it.
 
+var fruit = [];
 
+fruit.push("apple", "banana", "orange", "lime");
 
-
-
+document.getElementById("q1").innerHTML = fruit;
 
 // 2. Add an additional item to the beginning of your array.
 
+fruit.unshift('melon');
 
-
-
-
+document.getElementById("q2").innerHTML = fruit;
 
 // 3. Remove the second and third items in your array.
 
+fruit.splice(1, 2);
 
+//fruit.splice(2, 1);
 
-
-
+document.getElementById("q3").innerHTML = fruit;
 
 // 4. Add two new items after the second item.
 
+fruit.splice (2, 0, "lemon", "kiwi")
 
-
-
-
+document.getElementById("q4").innerHTML = fruit;
 
 // 5. Log to the console: 'The current length of the array is....' using the .length method
 
+var length = fruit.length;
 
+console.log('The current length of the array is ' + length)
 
-
-
-
+document.getElementById("q5").innerHTML = length;
 
 // Use the following Array for questions 6-9:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
 
+things.splice(2, 1, "keyboard")
 
-
-
+document.getElementById("q6").innerHTML = things;
 
 
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
 
+var combinedString = things.join();
 
-
-
+document.getElementById("q7").innerHTML = combinedString;
 
 
 // 8. Remove the first item.
