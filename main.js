@@ -79,18 +79,18 @@ document.getElementById("q7").innerHTML = combinedString;
 
 // 8. Remove the first item.
 
+document.getElementById("q8a").innerHTML = things;
 
+things.shift();
 
-
-
-
+document.getElementById("q8b").innerHTML = things;
 
 
 // 9. Remove all items from the things array.
 
+things.splice(0, 4)
 
-
-
+document.getElementById("q9").innerHTML = things;
 
 
 
@@ -99,10 +99,9 @@ var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
 
+var orderedPeople = people.sort();
 
-
-
-
+document.getElementById("q10").innerHTML = orderedPeople;
 
 
 // 11. Create an array of arrays with the following three arrays:
@@ -117,19 +116,19 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
+var dogDescribe = [array1, array2, array3]
 
-
-
+document.getElementById("q11").innerHTML = dogDescribe;
 
 
 
 // 12. Remove "Sparky" and "White" from the above array of arrays.
 
+dogDescribe[0].splice(3, 1)
 
+dogDescribe[2].splice(0, 1)
 
-
-
-
+document.getElementById("q12").innerHTML = dogDescribe;
 
 // ADVANCED TRACK
 // Use the following campingItems array for question 13
